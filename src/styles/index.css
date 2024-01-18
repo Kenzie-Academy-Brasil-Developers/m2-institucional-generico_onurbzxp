@@ -1,0 +1,90 @@
+body {
+    font-family: var(--font-primary);
+    color: var(--primary-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    padding: var(--spacing-large);
+    text-align: center;
+}
+
+header button {
+    background-color: var(--accent-color);
+    color: var(--text-light);
+    border: none;
+    padding: var(--spacing-small) var(--spacing-medium);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+header button:hover {
+    background-color: darken(var(--accent-color), 10%);
+}
+
+/* Estilos da seção principal */
+main {
+    padding: var(--spacing-large) 0;
+}
+
+/* Seção Banner */
+section {
+    padding: var(--spacing-large);
+    border-bottom: 1px solid var(--border-color);
+}
+
+section div {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+section h1 span {
+    color: var(--accent-color);
+}
+
+section p {
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-medium);
+}
+
+section button {
+    background-color: var(--accent-color);
+    color: var(--text-light);
+    padding: var(--spacing-small) var(--spacing-medium);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+section button:hover {
+    background-color: lighten(var(--accent-color), 10%);
+}
+
+section ul {
+    list-style: none;
+}
+
+section li {
+    margin-bottom: var(--spacing-medium);
+}
+
+section h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    padding: var(--spacing-medium);
+    text-align: center;
+}

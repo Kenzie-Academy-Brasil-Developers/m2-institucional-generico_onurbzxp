@@ -1,0 +1,10 @@
+:root {
+    --primary-color: #000000;
+    --secondary-color: rgb(129, 129, 129); 
+  
+    --font-primary: 'Open Sans', sans-serif;
+    --font-secondary: 'Roboto', sans-serif; 
+  
+    --header-height: 80px; 
+  }
+  
