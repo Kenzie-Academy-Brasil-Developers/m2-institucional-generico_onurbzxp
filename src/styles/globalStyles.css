@@ -1,10 +1,15 @@
 :root {
-    --primary-color: #000000;
-    --secondary-color: rgb(129, 129, 129); 
-  
-    --font-primary: 'Open Sans', sans-serif;
-    --font-secondary: 'Roboto', sans-serif; 
-  
-    --header-height: 80px; 
-  }
-  
+  --color-primary: #ffffff; /* branco */
+  --color-secondary: #000000; /* preto */
+  --color-background: #0D1117; /* azul escuro, quase preto */
+  --color-accent: #58a6ff; /* azul claro para destaques e links */
+  --color-text: #C9D1D9; /* cinza claro para texto regular */
+
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-size-regular: 16px;
+  --font-size-title: 32px;
+  --font-size-subtitle: 24px;
+  --font-size-small: 14px;
+
+  --spacing-content: 2rem;
+}
