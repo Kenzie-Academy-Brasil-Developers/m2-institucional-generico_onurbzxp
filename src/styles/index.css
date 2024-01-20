@@ -12,21 +12,31 @@ body {
     background-color: var(--color-secondary);
     text-align: center;
     padding: var(--spacing-content);
-}
-
-.header__logo {
-    /* Adicione estilos para o logo se necessário */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgb(48, 48, 48);
 }
 
 .header__button {
     background-color: var(--color-accent);
     color: var(--color-primary);
-    padding: 10px 20px;
+    padding: 10px 10px;
     border: none;
     cursor: pointer;
     font-size: var(--font-size-regular);
     margin-top: var(--spacing-content);
 }
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 2rem;
+    max-width: 1200px;
+}
+
 
 /* BANNER */
 .banner {
@@ -38,6 +48,7 @@ body {
     font-size: var(--font-size-title);
     color: var(--color-primary);
     margin-bottom: var(--spacing-content);
+    padding: 5px
 }
 
 .banner__title--highlight {
@@ -82,9 +93,13 @@ body {
     justify-content: space-between;
 }
 
+.comments__content,
 .faq__content {
-    max-width: 50%;
+    position: sticky;
+    top: 70px;
 }
+
+
 
 .faq__title {
     font-size: var(--font-size-subtitle);
@@ -126,6 +141,8 @@ body {
 
 /* COMMENTS */
 .comments {
+    display: flex;
+    flex-direction: row-reverse;
     padding: var(--spacing-content);
     border-top: 1px solid var(--color-text);
     background-color: var(--color-secondary);
@@ -153,4 +170,42 @@ body {
 .comments__name {
     font-size: var(--font-size-regular);
     color: var(--color-primary);
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
