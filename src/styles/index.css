@@ -21,17 +21,15 @@ p {
     position: sticky;
     top: 0;
     z-index: 10;
-    background: rgb(48, 48, 48);
 }
 
 .header__button {
-    background-color: var(--color-accent);
+    background-color: var(--color-secondary);
     color: var(--color-primary);
     padding: 10px 10px;
-    border: none;
+    border: 1px solid #F8F9FA;
     cursor: pointer;
     font-size: var(--font-size-regular);
-    margin-top: var(--spacing-content);
 }
 
 .header__content {
@@ -48,6 +46,15 @@ p {
 .banner {
     text-align: center;
     padding: var(--spacing-content);
+    height: 70vh;
+}
+
+.banner__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
 }
 
 .banner__title {
@@ -64,6 +71,7 @@ p {
 .banner__text {
     color: var(--color-text);
     margin-bottom: var(--spacing-content);
+    font-size: 20px;
 }
 
 .banner__button {
@@ -79,6 +87,16 @@ p {
 .about {
     padding: var(--spacing-content);
     border-top: 1px solid var(--color-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
 }
 
 .about__title {
@@ -89,6 +107,8 @@ p {
 
 .about__text {
     color: var(--color-text);
+    width: 30rem;
+    font-size: 20px;
 }
 
 /* FAQ */
@@ -101,6 +121,7 @@ p {
 
 .comments__content,
 .faq__content {
+    height: fit-content;
     position: sticky;
     top: 70px;
 }
@@ -116,6 +137,7 @@ p {
 .faq__text {
     color: var(--color-text);
     margin-bottom: var(--spacing-content);
+    font-size: 20px;
 }
 
 .faq__button {
@@ -143,6 +165,7 @@ p {
 
 .faq__answer {
     color: var(--color-text);
+    font-size: 20px;
 }
 
 /* COMMENTS */
@@ -163,6 +186,7 @@ p {
 .comments__text {
     color: var(--color-text);
     margin-bottom: var(--spacing-content);
+    font-size: 20px;
 }
 
 .comments__list {

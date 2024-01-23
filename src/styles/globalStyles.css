@@ -1,9 +1,9 @@
 :root {
-  --color-primary: #ffffff; /* branco */
-  --color-secondary: #000000; /* preto */
-  --color-background: #0D1117; /* azul escuro, quase preto */
-  --color-accent: #58a6ff; /* azul claro para destaques e links */
-  --color-text: #C9D1D9; /* cinza claro para texto regular */
+  --color-primary: #ffffff;
+  --color-secondary: #191C1F;
+  --color-background: #0D1117; 
+  --color-accent: #4C6EF5; 
+  --color-text: #ADB5BD;
 
   --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   --font-size-regular: 16px;
