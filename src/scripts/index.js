@@ -1,21 +1,25 @@
-var modal = document.getElementById("modal");
-var btnHeader = document.querySelector(".header__button");
-var btnFaq = document.querySelector(".faq__button");
-var span = document.getElementsByClassName("close-button")[0];
+function handleModal (){
+    const button = document.getElementById('register_modal')
+    const modalContainer = document.getElementById('modalController')
+    const button_faq = document.querySelector('.button_nextClass')
 
-btnHeader.onclick = function () {
-    modal.style.display = "block";
-}
-btnFaq.onclick = function () {
-    modal.style.display = "block";
-}
-
-span.onclick = function () {
-    modal.style.display = "none";
+    button.addEventListener('click' , () => {
+        modalContainer.showModal()
+        
+    })
+    button_faq.addEventListener('click' , () => {
+        modalContainer.showModal()
+    })
 }
 
-window.onclick = function (event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
+function closeModal(){
+    const buttonCloseModal = document.getElementById('close_modal')
+    const modalContainer = document.getElementById('modalController')
+
+    buttonCloseModal.addEventListener('click', () => {
+        modalContainer.close()
+    })
 }
+
+handleModal()
+closeModal()
